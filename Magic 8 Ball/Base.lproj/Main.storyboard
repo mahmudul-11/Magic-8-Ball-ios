@@ -37,9 +37,12 @@
                                     <color key="baseForegroundColor" red="0.49019607843137253" green="0.82352941176470584" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="askButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4u-Ll-ZKW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask Me Anything ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsL-iN-uCU">
-                                <rect key="frame" x="34" y="114" width="309" height="91"/>
+                                <rect key="frame" x="66" y="118" width="309" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
@@ -49,6 +52,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.49019607843137253" green="0.82352941176470584" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="a10-cv-GnD" id="Scl-wQ-sYM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

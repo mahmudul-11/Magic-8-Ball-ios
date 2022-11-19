@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var mainImageView: UIImageView!
+    
     let ballArray = [
         UIImage(imageLiteralResourceName: "ball1"),
         UIImage(imageLiteralResourceName: "ball2"),
@@ -19,6 +21,11 @@ class ViewController: UIViewController {
     ]
 
 
-
+    @IBAction func askButtonAction(_ sender: UIButton) {
+        
+        print("Button is cliked for \(count) times")
+        mainImageView.image = ballArray.randomElement()
+    }
+    
 }
 
