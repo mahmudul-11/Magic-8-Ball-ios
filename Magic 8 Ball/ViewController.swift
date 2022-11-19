@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func askButtonAction(_ sender: UIButton) {
         
-        print("Button is cliked for \(count) times")
+        
         mainImageView.image = ballArray.randomElement()
     }
     
